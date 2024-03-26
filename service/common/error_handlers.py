@@ -62,7 +62,7 @@ def method_not_supported(error):
         jsonify(status=status.HTTP_405_METHOD_NOT_ALLOWED,
                 error="Method not Allowed",
                 message=message,
-        ),
+                ),
         status.HTTP_405_METHOD_NOT_ALLOWED,
     )
 
