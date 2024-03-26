@@ -3,7 +3,7 @@ name: CI workflow
 on:
   push:
     branches: 
-      - push on main branch
+      - push to main branch
   pull_request:
     branches: 
       - pull_request on main branch
