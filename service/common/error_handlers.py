@@ -47,8 +47,8 @@ def not_found(error):
     app.logger.warning(message)
     return (
         jsonify(status=status.HTTP_404_NOT_FOUND,
-            error="Not Found",
-            message=message),
+                error="Not Found",
+                message=message),
         status.HTTP_404_NOT_FOUND,
     )
 
@@ -59,10 +59,9 @@ def method_not_supported(error):
     message = str(error)
     app.logger.warning(message)
     return (
-        jsonify(
-            status=status.HTTP_405_METHOD_NOT_ALLOWED,
-            error="Method not Allowed",
-            message=message,
+        jsonify(status=status.HTTP_405_METHOD_NOT_ALLOWED,
+                error="Method not Allowed",
+                message=message,
         ),
         status.HTTP_405_METHOD_NOT_ALLOWED,
     )
